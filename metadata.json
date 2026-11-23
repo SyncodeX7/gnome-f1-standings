@@ -1,0 +1,16 @@
+{
+  "uuid": "f1-standings@aditya",
+  "name": "F1 Standings",
+  "description": "Puts the official Formula 1 logo in white on the left of the top bar. Click it for the live driver championship standings with team colours, points and wins.",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "version": 2,
+  "gettext-domain": "f1-standings"
+}

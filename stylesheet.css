@@ -1,0 +1,147 @@
+/* F1 Standings — popup styling.
+ *
+ * Only the F1 red is hard-coded; all other text colours are inherited from
+ * the shell theme so the popup works in both dark and light styles.
+ */
+
+.f1-menu {
+    min-width: 360px;
+}
+
+/* The single menu item that holds the whole card. */
+.f1-popup-item {
+    padding: 0;
+    border-radius: 0;
+}
+
+.f1-header {
+    padding: 10px 14px 6px 14px;
+    spacing: 10px;
+}
+
+.f1-title {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #e10600;
+}
+
+.f1-subtitle {
+    font-size: 10px;
+    padding-top: 2px;
+}
+
+.f1-columns {
+    padding: 2px 14px 4px 14px;
+    spacing: 10px;
+}
+
+.f1-col-pos {
+    min-width: 24px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.f1-col-spacer {
+    width: 3px;
+    height: 1px;
+}
+
+.f1-col-driver {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.f1-col-pts {
+    min-width: 46px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.f1-row {
+    padding: 4px 14px;
+    spacing: 10px;
+}
+
+.f1-row-leader {
+    background-color: rgba(225, 6, 0, 0.12);
+}
+
+.f1-pos {
+    min-width: 24px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.f1-pos-leader {
+    color: #e10600;
+}
+
+.f1-team-bar {
+    width: 3px;
+    height: 26px;
+    border-radius: 2px;
+}
+
+.f1-driver-text {
+    spacing: 1px;
+}
+
+.f1-driver-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.f1-team-name {
+    font-size: 10px;
+}
+
+.f1-points {
+    min-width: 46px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.f1-points-leader {
+    color: #e10600;
+}
+
+.f1-message {
+    padding: 18px 14px;
+    spacing: 4px;
+}
+
+.f1-message-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.f1-message-detail {
+    font-size: 10px;
+}
+
+.f1-footer {
+    padding: 6px 14px;
+    border-radius: 0;
+}
+
+.f1-footer:hover {
+    background-color: rgba(128, 128, 128, 0.14);
+}
+
+.f1-footer-box {
+    spacing: 10px;
+}
+
+.f1-updated {
+    font-size: 10px;
+}
+
+.f1-refresh {
+    font-size: 10px;
+    font-weight: 700;
+    color: #e10600;
+}

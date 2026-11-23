@@ -1,4 +1,7 @@
 /*
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * Copyright (C) 2026 SyncodeX7
+ *
  * Data layer for the F1 Standings extension.
  *
  * Standings come from the free Jolpica F1 API (an Ergast-compatible mirror):

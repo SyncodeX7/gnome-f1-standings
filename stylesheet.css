@@ -1,5 +1,8 @@
 /* F1 Standings — popup styling.
  *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * Copyright (C) 2026 SyncodeX7
+ *
  * Only the F1 red is hard-coded; all other text colours are inherited from
  * the shell theme so the popup works in both dark and light styles.
  */

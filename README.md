@@ -58,3 +58,10 @@ gnome-extensions enable f1-standings@aditya
 
 JavaScript is imported only once per shell session, so JS changes need a
 logout/login on Wayland (or a shell restart on X11).
+
+## License
+
+GPL-2.0-or-later — see [LICENSE](LICENSE).
+
+The F1 logo is a trademark of Formula One Licensing BV and is not covered by
+the software license.

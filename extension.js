@@ -14,6 +14,15 @@ import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 import {StandingsService, teamColor, formatPoints} from './standings.js';
 
+/* GNOME Shell 51 removed StBoxLayout:vertical in favour of :orientation.
+ * :orientation exists from 48 onwards; keep a fallback for older shells. */
+let VERTICAL = {orientation: Clutter.Orientation.VERTICAL};
+try {
+    new St.BoxLayout(VERTICAL);
+} catch {
+    VERTICAL = {vertical: true};
+}
+
 /* Poll in the background this often, even when the menu is never opened. */
 const REFRESH_INTERVAL_SECONDS = 15 * 60;
 /* Refresh on open when the data is older than this. */
@@ -74,7 +83,7 @@ class F1Indicator extends PanelMenu.Button {
         this.menu.addMenuItem(this._popupItem);
 
         this._container = new St.BoxLayout({
-            vertical: true,
+            ...VERTICAL,
             x_expand: true,
             style_class: 'f1-popup',
         });
@@ -92,7 +101,7 @@ class F1Indicator extends PanelMenu.Button {
         }));
 
         const titles = new St.BoxLayout({
-            vertical: true,
+            ...VERTICAL,
             x_expand: true,
             style_class: 'f1-header-titles',
         });
@@ -117,7 +126,7 @@ class F1Indicator extends PanelMenu.Button {
 
         /* Driver list (scrolls) */
         this._listBox = new St.BoxLayout({
-            vertical: true,
+            ...VERTICAL,
             style_class: 'f1-list',
         });
         this._scrollView = new St.ScrollView({
@@ -297,7 +306,7 @@ class F1Indicator extends PanelMenu.Button {
         }));
 
         const textBox = new St.BoxLayout({
-            vertical: true,
+            ...VERTICAL,
             x_expand: true,
             style_class: 'f1-driver-text',
         });
@@ -332,7 +341,7 @@ class F1Indicator extends PanelMenu.Button {
         this._listBox.destroy_all_children();
 
         const box = new St.BoxLayout({
-            vertical: true,
+            ...VERTICAL,
             x_expand: true,
             style_class: 'f1-message',
         });

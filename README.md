@@ -19,7 +19,7 @@ footer stay put while the driver list scrolls.
 
 ## Install
 
-Requires GNOME Shell 45–51 (tested on 50).
+Requires GNOME Shell 45–51 (tested on 50 and 51).
 
 ```sh
 git clone https://github.com/SyncodeX7/gnome-f1-standings.git \
